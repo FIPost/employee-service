@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: fipost/employee-service
           tag_with_ref: true
-
+          tags: fipost/employee-service:latest
       - name: Push to GitHub Packages
         uses: docker/build-push-action@v1
         with:
